@@ -1,5 +1,7 @@
+@import "../utils/variables";
+
 .section--advantages{
-    background-color: var(--background);
+    background-color: $background;
     padding-top: 40px;
     padding-bottom: 182px;
 }
@@ -13,7 +15,7 @@
     font-size: 58px;
     letter-spacing: 0.04em;
     line-height: 1.145;
-    color: var(--title-text-color);
+    color: $title-text-color;
     padding-bottom: 16px;
 }
 .p--advantages{
@@ -22,12 +24,12 @@
     font-size: 16px;
     letter-spacing: 0.02em;
     line-height: 1.76;
-    color: var(--primery-text-color);
+    color: $primary-text-color;
 }
 .icon{
     width: 50px;
     height: 50px;
-    fill: var(--accent-color);
+    fill: $accent-color;
 }
 .div__advantages--svg{
     padding-bottom: 40px;

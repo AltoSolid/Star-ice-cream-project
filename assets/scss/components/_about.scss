@@ -1,6 +1,8 @@
+@import "../utils/variables";
+
 .section--about{
-    background-color: var(--background);
-    background-image: url("../images/milk.png");
+    background-color: $background;
+    background-image: url("../../images/milk.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -13,7 +15,7 @@
     padding-bottom: 16px;
     font-family: 'Titan One', cursive;
     text-transform: uppercase;
-    color: var(--accent-color);
+    color: $accent-color;
     font-weight: 400;
     font-size: 30px;
     letter-spacing: 0.04em;
@@ -28,7 +30,7 @@
     letter-spacing: 0.06em;
     vertical-align: top;
     line-height: 1.145;
-    color: var(--title-text-color);
+    color: $title-text-color;
 }
 .img{
     padding-right: 99px;
@@ -37,7 +39,7 @@
     display: flex;
 }
 .div__p--principal{
-    color: var(--primery-text-color);
+    color: $primary-text-color;
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -47,7 +49,7 @@
     padding-bottom: 20px;
 }
 .div__p--secondary{
-    color: var(--second-text);
+    color: $second-text;
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -57,7 +59,7 @@
     padding-bottom: 40px;
 }
 .button--about{
-    color: var(--primery-text-color);
+    color: $title-text-color;
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -66,17 +68,16 @@
     text-align: center;
     width: 176px;
     height: 44px;
-    color: var(--title-text-color);
     border: none;
     border-radius: 20px;
-    background-color: var(--primary-white-color);
+    background-color: $primary-white-color;
     cursor: pointer;
 }
 .button--about:hover{
-    background-color: var(--hover-button);
+    background-color: $hover-button;
 }
 .button--about:focus{
-    background-color: var(--hover-button);
+    background-color: $hover-button;
 }
 .div--text{
     padding-top: 90px;

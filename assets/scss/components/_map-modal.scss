@@ -20,7 +20,7 @@
     height: auto;
     padding: 40px;
     border-radius: 4px;
-    background-color: #ffffff;
+    background-color: $primary-white-color;
     box-shadow: 0px 3px 10px rgba(212, 20, 67, 0.2);
     opacity: 1;
     transform: scale(1);
@@ -42,13 +42,13 @@
 
         &:hover,
         &:focus {
-            background-color: #d41443;
+            background-color: $title-text-color;
         }
     }
 
     &__btn:hover &__icon,
     &__btn:focus &__icon {
-        fill: #ffffff;
+        fill: $primary-white-color;
     }
 
     &__icon {
@@ -63,7 +63,7 @@
         font-size: 20px;
         line-height: 1.17;
         text-align: center;
-        color: #d41443;
+        color: $title-text-color;
     }
 
     &__map {
@@ -74,7 +74,7 @@
 
     &__text {
         font-size: 14px;
-        color: #d41443;
+        color: $title-text-color;
     }
 
     &__link {
@@ -83,15 +83,15 @@
         align-items: center;
         width: 198px;
         height: 44px;
-        border: 1px solid #d41443;
+        border: 1px solid $title-text-color;
         border-radius: 20px;
-        color: #d41443;
-        background-color: #ffffff;
+        color: $title-text-color;
+        background-color: $primary-white-color;
 
         &:hover,
         &:focus {
-            color: #ffffff;
-            background-color: #d41443;
+            color: $primary-white-color;
+            background-color: $title-text-color;
         }
     }
 }

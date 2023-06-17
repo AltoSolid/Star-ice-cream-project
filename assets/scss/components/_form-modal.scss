@@ -3,11 +3,11 @@
 
     &__label {
         display: block;
-        color: #d41444b0;
+        color: $label-border;
 
         &:hover,
         &:focus {
-            color: #d41443;
+            color: $title-text-color;
         }
     }
 
@@ -15,24 +15,24 @@
         display: block;
         width: 100%;
         border-radius: 4px;
-        border: 1px solid #00000088;
+        border: 1px solid $input-border;
         outline: none;
 
         &:hover,
         &:focus {
-            border: 1px solid #d41443;
+            border: 1px solid $title-text-color;
         }
     }
 
     &__text {
         width: 100%;
         border-radius: 4px;
-        border: 1px solid #00000088;
+        border: 1px solid $input-border;
         resize: none;
 
         &:hover,
         &:focus {
-            border: 1px solid #d41443;
+            border: 1px solid $title-text-color;
         }
     }
 

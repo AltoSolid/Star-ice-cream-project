@@ -1,0 +1,44 @@
+.form-modal {
+    width: 100%;
+
+    &__label {
+        display: block;
+        color: #d41444b0;
+
+        &:hover,
+        &:focus {
+            color: #d41443;
+        }
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid #00000088;
+        outline: none;
+
+        &:hover,
+        &:focus {
+            border: 1px solid #d41443;
+        }
+    }
+
+    &__text {
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid #00000088;
+        resize: none;
+
+        &:hover,
+        &:focus {
+            border: 1px solid #d41443;
+        }
+    }
+
+    &__box {
+        display: flex;
+        justify-content: center;
+    }
+
+}

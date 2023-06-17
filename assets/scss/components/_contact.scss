@@ -1,0 +1,189 @@
+// Ojo!!! aqui puse estilos Globales.
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+// fin estilos globales.
+
+.container {
+    min-width: 320px;
+    max-width: 1200px;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contact {
+    font-family: 'DM Sans', sans-serif;
+    background-color: lightgray;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    background-image: linear-gradient(to bottom, #ffffff 16%, #fff5f6 16%);
+
+    &__list {
+        display: flex;
+        gap: 32px;
+        margin-bottom: 60px;
+    }
+
+    &__item {
+        flex-basis: calc((100% - 64px) / 3);
+        padding: 40px;
+        width: 368px;
+        background-color: #ffffff;
+        border-radius: 24px;
+        border: 1px solid #e5e5e57e;
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75px;
+        height: 28px;
+        margin-bottom: 32px;
+        color: #ffffff;
+        text-transform: uppercase;
+        background-color: #f0d1a5;
+        border-radius: 6px;
+
+        &--green {
+            width: 138px;
+            background-color: #c2e297;
+        }
+    }
+
+    &__subsection {
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #e1e1e1;
+        }
+    }
+
+    &__menu {
+        margin-top: 8px;
+        line-height: 1.5;
+        color: #907e82;
+    }
+
+    &__time {
+        color: #ffa5ba;
+
+        &--margin {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__link {
+        line-height: 1.5;
+        color: #907e82;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: #d41443;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width: 1199px) {
+    .container {
+        width: 768px;
+    }
+
+    .contact {
+        background-image: linear-gradient(to bottom, #ffffff 48%, #fff5f6 48%);
+
+        &__item {
+            padding-left: 32px;
+            padding-right: 32px;
+            width: 224px;
+            font-size: 14px;
+
+            &--padding {
+                padding-right: 16px;
+            }
+        }
+
+        &__menu {
+            margin-top: 12px;
+            color: #907e82;
+        }
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width: 767px) {
+    .container {
+        width: 320px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contact {
+        background-image: linear-gradient(to bottom, #ffffff 21.5%, #fff5f6 21.5%);
+
+        &__list {
+            flex-direction: column;
+        }
+
+        &__item {
+            padding-left: 32px;
+            padding-right: 32px;
+            width: 280px;
+            font-size: 12px;
+        }
+
+        &__title {
+            width: 80px;
+            height: 16px;
+            margin-bottom: 20px;
+
+            &--green {
+                width: 130px;
+            }
+        }
+
+        &__subsection {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        &__menu {
+            margin-top: 8px;
+        }
+
+    }
+
+}

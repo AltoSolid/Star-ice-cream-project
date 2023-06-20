@@ -82,3 +82,60 @@
 .div--text{
     padding-top: 90px;
 }
+
+@media screen and (min-width:50px) and (max-width:767px){
+    .div__about-down{
+        flex-wrap: wrap;
+        max-width: 320px;
+    }
+    .img{
+        width: 280px;
+        height: 279px;
+        padding-right: 0;
+    }
+    .div__p--principal,
+    .div__p--secondary{
+        height: 111px;
+        padding: 0;
+        width: 220px;
+        font-size: 12px;
+        line-height: 1.62;
+    }
+    .div--text{
+        padding-top: 40px;
+        width: 220px;
+    }
+    .div__p--principal{
+        margin-bottom: 18px;
+    }
+    .button--about{
+        font-size: 14px;
+        line-height: 1.302142857142857;
+        margin-top: 80px;
+    }
+    .p--tittle{
+        font-size: 18px;
+        line-height: 1.145;
+    }
+    .h2--tittle{
+    font-size: 34px;
+    line-height: 1.145;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1199px){
+    .img{
+        width: 336px;
+        height: 335px;
+        padding-right: 0;
+        margin-right: 32px;
+    }
+    .div__p--principal,
+    .div__p--secondary{
+        font-size: 14px;
+        line-height: 1.74;
+        width: 334px;
+    }
+    .div--text{
+        padding-top: 0;
+    }
+}

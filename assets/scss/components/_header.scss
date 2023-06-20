@@ -1,25 +1,13 @@
   .container-header {
-      width: 1280px;
-      // height: 664px;
-      padding-left: 40px;
-      padding-right: 40px;
-      margin-left: auto;
-      margin-right: auto;
-        background-color: $color-fondo-header;
+      background-color: $background-header-color;
       
-
-
       .hero-header {
-      
           display: flex;
           align-items: center;
-          justify-content: space-between;
+          justify-content: space-around;
           padding-top: 37px;
           
-
           .logo-header {
-
-
               width: 199px;
               height: 50px;
 
@@ -63,7 +51,6 @@
               }
           }
 
-
           .button {
               width: 159px;
               height: 44px;
@@ -90,9 +77,6 @@
               width: 160px;
               height: 44px;
           }
-
-
-
       }
 
       /*hero-header*/
@@ -170,6 +154,7 @@
       .hero-header-container {
        
           display: flex;
+          justify-content: center;
 
           .hero-header-products {
               margin-top: 60px;

@@ -1,0 +1,141 @@
+@import "../utils/variables";
+
+.section--about{
+    background-color: $background;
+    background-image: url("../../images/milk.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.div__about-up{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.p--tittle{
+    padding-bottom: 16px;
+    font-family: 'Titan One', cursive;
+    text-transform: uppercase;
+    color: $accent-color;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    vertical-align: top;
+    line-height: 1.145;
+}
+.h2--tittle{
+    font-family: 'Titan One', cursive;
+    text-transform: uppercase;
+    font-size: 58px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    vertical-align: top;
+    line-height: 1.145;
+    color: $title-text-color;
+}
+.img{
+    padding-right: 99px;
+}
+.div__about-down{
+    display: flex;
+}
+.div__p--principal{
+    color: $primary-text-color;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    line-height: 1.76;
+    width: 400px;
+    padding-bottom: 20px;
+}
+.div__p--secondary{
+    color: $second-text;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    line-height: 1.94;
+    width: 400px;
+    padding-bottom: 40px;
+}
+.button--about{
+    color: $title-text-color;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    line-height: 1.301875;
+    text-align: center;
+    width: 176px;
+    height: 44px;
+    border: none;
+    border-radius: 20px;
+    background-color: $primary-white-color;
+    cursor: pointer;
+}
+.button--about:hover{
+    background-color: $hover-button;
+}
+.button--about:focus{
+    background-color: $hover-button;
+}
+.div--text{
+    padding-top: 90px;
+}
+
+@media screen and (min-width:50px) and (max-width:767px){
+    .div__about-down{
+        flex-wrap: wrap;
+        max-width: 320px;
+    }
+    .img{
+        width: 280px;
+        height: 279px;
+        padding-right: 0;
+    }
+    .div__p--principal,
+    .div__p--secondary{
+        height: 111px;
+        padding: 0;
+        width: 220px;
+        font-size: 12px;
+        line-height: 1.62;
+    }
+    .div--text{
+        padding-top: 40px;
+        width: 220px;
+    }
+    .div__p--principal{
+        margin-bottom: 18px;
+    }
+    .button--about{
+        font-size: 14px;
+        line-height: 1.302142857142857;
+        margin-top: 80px;
+    }
+    .p--tittle{
+        font-size: 18px;
+        line-height: 1.145;
+    }
+    .h2--tittle{
+    font-size: 34px;
+    line-height: 1.145;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1199px){
+    .img{
+        width: 336px;
+        height: 335px;
+        padding-right: 0;
+        margin-right: 32px;
+    }
+    .div__p--principal,
+    .div__p--secondary{
+        font-size: 14px;
+        line-height: 1.74;
+        width: 334px;
+    }
+    .div--text{
+        padding-top: 0;
+    }
+}

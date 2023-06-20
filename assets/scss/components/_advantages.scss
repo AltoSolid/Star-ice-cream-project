@@ -34,3 +34,36 @@
 .div__advantages--svg{
     padding-bottom: 40px;
 }
+@media screen and (min-width:50px) and (max-width:767px){
+    .ul__section-advantages{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+    .div__advantages--svg{
+        padding-bottom: 16px;
+    }
+    .p--advantages{
+        font-size: 12px;
+        line-height: 1.7;
+    }
+    .section--advantages{
+        padding-bottom: 66px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .ul__section-advantages{
+        gap: 22px;
+    }
+    .li--advantages{
+        width: 165px;
+    }
+    .p--advantages{
+        font-size: 14px;
+        line-height: 1.74;
+    }
+    .exception{
+        width: 196px;
+    }
+}

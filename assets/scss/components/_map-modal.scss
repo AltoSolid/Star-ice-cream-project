@@ -105,3 +105,36 @@
         transform: scale(0.1);
     }
 }
+
+@media only screen and (min-width:50px) and (max-width: 767px) {
+    .modal {
+        gap: 10px;
+        width: 315px;
+        padding: 30px 5px;
+
+
+
+        &__btn {
+            top: 8px;
+            right: 8px;
+            width: 20px;
+            height: 20px;
+        }
+
+
+        &__title {
+            font-size: 18px;
+        }
+
+        &__text {
+            font-size: 10px;
+
+        }
+
+        &__link {
+            width: 158px;
+            height: 34px;
+            font-size: 10px;
+        }
+    }
+}

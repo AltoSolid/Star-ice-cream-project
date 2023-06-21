@@ -8,11 +8,12 @@
   <link rel="stylesheet" href="./assets/css/main.min.css" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-  <link rel="stylesheet" href="assets/css/main.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap"
     rel="stylesheet" />
+    <script src="./assets/js/map-modal.js" defer></script>
+    <script src="./assets/js/form-modal.js" defer></script>
 </head>
 
 <body>
@@ -85,7 +86,7 @@
         <li class="li--advantages">
           <div class="div__advantages--svg">
             <svg class="icon">
-              <use href="./assets/images/SVG/1.svg#761"></use>
+              <use href="./assets/images/SVG/sprite.svg#761"></use>
             </svg>
           </div>
           <p class="p--number-advantages">721</p>
@@ -109,9 +110,7 @@
         </li>
         <li class="li--advantages">
           <div class="div__advantages--svg">
-            <svg class="icon">
-              <use href="./images/SVG/sprite.svg#84"></use>
-            </svg>
+            <img src="assets/images/heart-image.png" alt="animated heart image">
           </div>
           <p class="p--number-advantages">84</p>
           <p class="p--advantages">
@@ -273,11 +272,6 @@
     </div>
   </section>
   <footer class="footer">
-    <!-- Botones que van en la seccion contacts -->
-    <!-- <div class="footer__buttons">
-        <button class="footer__buttons--left">Our Locations ></button>
-        <button class="footer__buttons--right">Franchise ></button>
-      </div> -->
     <section class="footer__middle">
       <div class="footer__title">
         <p class="footer__title--top">HOMEMADE ICE CREAM MADE</p>
@@ -319,9 +313,6 @@
       <p class="footer__rights">© 2022 - IceCream. All Rights Reserved.</p>
     </div>
   </footer>
-
-  <script src="./assets/js/map-modal.js"></script>
-  <script src="./assets/js/form-modal.js"></script>
 </body>
 
 </html>

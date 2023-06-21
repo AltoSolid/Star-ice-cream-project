@@ -31,8 +31,36 @@
     height: 50px;
     fill: $accent-color;
 }
+.ul__section-advantages:hover .icon{
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
 .div__advantages--svg{
     padding-bottom: 40px;
+}
+.ul__section-advantages:hover .li--advantages{
+    animation: rotate 2s linear;
+}
+.li--advantages{
+    display: inline-block;
+    transition: transform 0.3s;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 @media screen and (min-width:50px) and (max-width:767px){
     .ul__section-advantages{

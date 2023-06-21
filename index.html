@@ -122,12 +122,162 @@
       </ul>
     </div>
   </section>
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer__buttons">
-      <button class="footer__buttons--left">Our Locations ></button>
-      <button class="footer__buttons--right">Franchise ></button>
+  <section class="contact" id="contact">
+    <div class="container">
+      <ul class="contact__list">
+        <li class="contact__item">
+          <p class="contact__title">Cafe</p>
+          <ul>
+            <li class="contact__subsection">
+              <p class="contact__city">Chicago</p>
+              <p class="contact__menu">
+                Handcrafted coffee, baked goods, and premium ice cream.
+              </p>
+            </li>
+            <li class="contact__subsection">
+              <p class="contact__day">Monday - Friday</p>
+              <p class="contact__time contact__time--margin">
+                <time datetime="6:00">6:00</time> AM -
+                <time datetime="22:00">10:00</time> PM
+              </p>
+              <p class="contact__day">Saturday - Sunday</p>
+              <p class="contact__time">
+                <time datetime="8:00">8:00</time> AM -
+                <time datetime="16:00">16:00</time> PM
+              </p>
+            </li>
+            <li class="contact__subsection">
+              <a class="contact__link" href="tel:+61(0)383766284">+61(0)383766284</a>
+              <a class="contact__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            </li>
+          </ul>
+        </li>
+        <li class="contact__item">
+          <p class="contact__title contact__title--green">Food truck</p>
+          <ul>
+            <li class="contact__subsection">
+              <p class="contact__city">Los Angeles</p>
+              <p class="contact__menu">
+                Fusion cuisine and refreshing ice cream made with passion.
+              </p>
+            </li>
+
+            <li class="contact__subsection">
+              <p class="contact__day">Monday - Friday</p>
+              <p class="contact__time contact__time--margin">
+                <time datetime="6:00">6:00</time> AM -
+                <time datetime="22:00">10:00</time> PM
+              </p>
+              <p class="contact__day">Saturday - Sunday</p>
+              <p class="contact__time">
+                <time datetime="8:00">8:00</time> AM -
+                <time datetime="16:00">16:00</time> PM
+              </p>
+            </li>
+
+            <li class="contact__subsection">
+              <a class="contact__link" href="tel:+61(0)383766284">+61(0)383766284</a>
+              <a class="contact__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            </li>
+          </ul>
+        </li>
+        <li class="contact__item contact__item--padding">
+          <p class="contact__title">Cafe</p>
+          <ul>
+            <li class="contact__subsection">
+              <p class="contact__city">New York</p>
+              <p class="contact__menu">
+                Specialty teas, artisanal pastries, mouth-watering ice cream.
+              </p>
+            </li>
+            <li class="contact__subsection">
+              <p class="contact__day">Monday - Friday</p>
+              <p class="contact__time contact__time--margin">
+                <time datetime="6:00">6:00</time> AM -
+                <time datetime="22:00">10:00</time> PM
+              </p>
+              <p class="contact__day">Saturday - Sunday</p>
+              <p class="contact__time">
+                <time datetime="8:00">8:00</time> AM -
+                <time datetime="16:00">16:00</time> PM
+              </p>
+            </li>
+            <li class="contact__subsection">
+              <a class="contact__link" href="tel:+61(0)383766284">+61(0)383766284</a>
+              <a class="contact__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Botones enlazados a los modales,  -->
+      <ul class="contact__btn">
+        <li>
+          <button data-modal-open class="footer__buttons--left" type="button">
+            Our locations
+          </button>
+        </li>
+        <li>
+          <button data-form-open class="footer__buttons--right" type="button">
+            Franchise
+          </button>
+        </li>
+      </ul>
+
+      <!-- Modal con mapa -->
+      <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+          <button data-modal-close type="button" class="modal__btn">
+            <svg class="modal__icon">
+              <use href="./assets/images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <p class="modal__title">We will be glad to see you</p>
+          <iframe class="modal__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.8661569315145!2d30.531508776895695!3d50.424965289198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d96f5139689b%3A0xa1f7c65300bebad1!2zR29JVDog0JrRg9GA0YHRiyDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjyDQsiDQmtC40LXQstC1IHwgSVQg0JrRg9GA0YHRiw!5e0!3m2!1ses!2sco!4v1686875199601!5m2!1ses!2sco"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p class="modal__text">
+            Yevhena Konovaltsia St, 36, Kyiv, Ucrania, 02000
+          </p>
+
+          <a class="modal__link" href="https://goo.gl/maps/daH18t5GkjkhFG7Z6" target="_blank">Open in Google Maps</a>
+        </div>
+      </div>
+
+      <!-- Modal con formulario -->
+      <div data-form class="backdrop is-hidden">
+        <div class="modal">
+          <button data-form-close type="button" class="modal__btn">
+            <svg class="modal__icon">
+              <use href="./assets/images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <p class="modal__title">
+            Leave your details and maybe we will call you back
+          </p>
+          <form class="form-modal">
+            <label class="form-modal__label" for="">Name</label>
+            <input class="form-modal__input" type="text" name="" id="" />
+            <label class="form-modal__label" for="">Phone</label>
+            <input class="form-modal__input" type="tel" name="" id="" />
+            <label class="form-modal__label" for="">E-mail</label>
+            <input class="form-modal__input" type="email" name="" id="" />
+            <label class="form-modal__label" for="">A few words, my darling</label>
+            <textarea class="form-modal__text" name="" id="" cols="30" rows="10"></textarea>
+            <div class="form-modal__box">
+              <button class="form-modal__btn" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
+  </section>
+  <footer class="footer">
+    <!-- Botones que van en la seccion contacts -->
+    <!-- <div class="footer__buttons">
+        <button class="footer__buttons--left">Our Locations ></button>
+        <button class="footer__buttons--right">Franchise ></button>
+      </div> -->
     <section class="footer__middle">
       <div class="footer__title">
         <p class="footer__title--top">HOMEMADE ICE CREAM MADE</p>
@@ -164,208 +314,14 @@
         </ul>
       </div>
     </section>
-    <section class="contact" id="contact">
-      <div class="container">
-        <ul class="contact__list">
-          <li class="contact__item">
-            <p class="contact__title">Cafe</p>
-            <ul>
-              <li class="contact__subsection">
-                <p class="contact__city">Chicago</p>
-                <p class="contact__menu">
-                  Handcrafted coffee, baked goods, and premium ice cream.
-                </p>
-              </li>
-              <li class="contact__subsection">
-                <p class="contact__day">Monday - Friday</p>
-                <p class="contact__time contact__time--margin">
-                  <time datetime="6:00">6:00</time> AM -
-                  <time datetime="22:00">10:00</time> PM
-                </p>
-                <p class="contact__day">Saturday - Sunday</p>
-                <p class="contact__time">
-                  <time datetime="8:00">8:00</time> AM -
-                  <time datetime="16:00">16:00</time> PM
-                </p>
-              </li>
-              <li class="contact__subsection">
-                <a class="contact__link" href="tel:+61(0)383766284">+61(0)383766284</a>
-                <a class="contact__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
-              </li>
-            </ul>
-          </li>
-          <li class="contact__item">
-            <p class="contact__title contact__title--green">Food truck</p>
-            <ul>
-              <li class="contact__subsection">
-                <p class="contact__city">Los Angeles</p>
-                <p class="contact__menu">
-                  Fusion cuisine and refreshing ice cream made with passion.
-                </p>
-              </li>
+    <div>
+      <div class="footer__line"></div>
+      <p class="footer__rights">© 2022 - IceCream. All Rights Reserved.</p>
+    </div>
+  </footer>
 
-              <li class="contact__subsection">
-                <p class="contact__day">Monday - Friday</p>
-                <p class="contact__time contact__time--margin">
-                  <time datetime="6:00">6:00</time> AM -
-                  <time datetime="22:00">10:00</time> PM
-                </p>
-                <p class="contact__day">Saturday - Sunday</p>
-                <p class="contact__time">
-                  <time datetime="8:00">8:00</time> AM -
-                  <time datetime="16:00">16:00</time> PM
-                </p>
-              </li>
-
-              <li class="contact__subsection">
-                <a class="contact__link" href="tel:+61(0)383766284">+61(0)383766284</a>
-                <a class="contact__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
-              </li>
-            </ul>
-          </li>
-          <li class="contact__item contact__item--padding">
-            <p class="contact__title">Cafe</p>
-            <ul>
-              <li class="contact__subsection">
-                <p class="contact__city">New York</p>
-                <p class="contact__menu">
-                  Specialty teas, artisanal pastries, mouth-watering ice cream.
-                </p>
-              </li>
-              <li class="contact__subsection">
-                <p class="contact__day">Monday - Friday</p>
-                <p class="contact__time contact__time--margin">
-                  <time datetime="6:00">6:00</time> AM -
-                  <time datetime="22:00">10:00</time> PM
-                </p>
-                <p class="contact__day">Saturday - Sunday</p>
-                <p class="contact__time">
-                  <time datetime="8:00">8:00</time> AM -
-                  <time datetime="16:00">16:00</time> PM
-                </p>
-              </li>
-              <li class="contact__subsection">
-                <a class="contact__link" href="tel:+61(0)383766284">+61(0)383766284</a>
-                <a class="contact__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-
-        <!-- Botones enlazados a los modales,  -->
-        <ul class="contact__btn">
-          <li>
-            <button data-modal-open class="footer__buttons--left" type="button">
-              Our locations
-            </button>
-          </li>
-          <li>
-            <button data-form-open class="footer__buttons--right" type="button">
-              Franchise
-            </button>
-          </li>
-        </ul>
-
-        <!-- Modal con mapa -->
-        <div data-modal class="backdrop is-hidden">
-          <div class="modal">
-            <button data-modal-close type="button" class="modal__btn">
-              <svg class="modal__icon">
-                <use href="./assets/images/icons.svg#icon-close"></use>
-              </svg>
-            </button>
-            <p class="modal__title">We will be glad to see you</p>
-            <iframe class="modal__map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.8661569315145!2d30.531508776895695!3d50.424965289198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d96f5139689b%3A0xa1f7c65300bebad1!2zR29JVDog0JrRg9GA0YHRiyDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjyDQsiDQmtC40LXQstC1IHwgSVQg0JrRg9GA0YHRiw!5e0!3m2!1ses!2sco!4v1686875199601!5m2!1ses!2sco"
-              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p class="modal__text">
-              Yevhena Konovaltsia St, 36, Kyiv, Ucrania, 02000
-            </p>
-
-            <a class="modal__link" href="https://goo.gl/maps/daH18t5GkjkhFG7Z6" target="_blank">Open in Google Maps</a>
-          </div>
-        </div>
-
-        <!-- Modal con formulario -->
-        <div data-form class="backdrop is-hidden">
-          <div class="modal">
-            <button data-form-close type="button" class="modal__btn">
-              <svg class="modal__icon">
-                <use href="./assets/images/icons.svg#icon-close"></use>
-              </svg>
-            </button>
-            <p class="modal__title">
-              Leave your details and maybe we will call you back
-            </p>
-            <form class="form-modal">
-              <label class="form-modal__label" for="">Name</label>
-              <input class="form-modal__input" type="text" name="" id="" />
-              <label class="form-modal__label" for="">Phone</label>
-              <input class="form-modal__input" type="tel" name="" id="" />
-              <label class="form-modal__label" for="">E-mail</label>
-              <input class="form-modal__input" type="email" name="" id="" />
-              <label class="form-modal__label" for="">A few words, my darling</label>
-              <textarea class="form-modal__text" name="" id="" cols="30" rows="10"></textarea>
-              <div class="form-modal__box">
-                <button class="form-modal__btn" type="submit">Send</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <!-- Botones que van en la seccion contacts -->
-      <!-- <div class="footer__buttons">
-        <button class="footer__buttons--left">Our Locations ></button>
-        <button class="footer__buttons--right">Franchise ></button>
-      </div> -->
-      <section class="footer__middle">
-        <div class="footer__title">
-          <p class="footer__title--top">HOMEMADE ICE CREAM MADE</p>
-          <p class="footer__title--bottom">WITH PASSION</p>
-        </div>
-
-        <div class="footer__contacts">
-          <ul class="footer__iconlist">
-            <li class="footer__icon">
-              <a href="#">
-                <svg width="20" height="20">
-                  <use href="/assets/images/SVG/sprite.svg#icon-github"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__icon">
-              <a href="#">
-                <svg width="20" height="20">
-                  <use href="/assets/images/SVG/sprite.svg#icon-telegram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__icon">
-              <a href="#">
-                <svg width="20" height="20">
-                  <use href="/assets/images/SVG/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <ul class="footer__number">
-            <p class="footer__contacts--text">Feel free to contact</p>
-            <p class="footer__contacts--number">+61 (0) 383 766 284</p>
-          </ul>
-        </div>
-      </section>
-      <div>
-        <div class="footer__line"></div>
-        <p class="footer__rights">© 2022 - IceCream. All Rights Reserved.</p>
-      </div>
-    </footer>
-
-    <script src="./assets/js/map-modal.js"></script>
-    <script src="./assets/js/form-modal.js"></script>
+  <script src="./assets/js/map-modal.js"></script>
+  <script src="./assets/js/form-modal.js"></script>
 </body>
 
 </html>
